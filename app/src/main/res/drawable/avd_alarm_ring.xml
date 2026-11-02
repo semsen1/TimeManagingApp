@@ -1,0 +1,15 @@
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_alarm">
+
+    <target
+        android:name="alarm"
+        android:animation="@animator/alarm_shake" />
+
+    <target
+        android:name="bell_left"
+        android:animation="@animator/bell_left_shake" />
+
+    <target
+        android:name="bell_right"
+        android:animation="@animator/bell_right_shake" />
+</animated-vector>

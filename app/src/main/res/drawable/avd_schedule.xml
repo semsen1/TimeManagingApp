@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_schedule">
+
+    <target android:name="sq1" android:animation="@animator/sq_move_right" />
+    <target android:name="sq2" android:animation="@animator/sq_move_right" />
+    <target android:name="sq3" android:animation="@animator/sq_move_down" />
+    <target android:name="sq4" android:animation="@animator/sq_move_left" />
+    <target android:name="sq5" android:animation="@animator/sq_move_left" />
+    <target android:name="sq6" android:animation="@animator/sq_move_up" />
+</animated-vector>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:drawable="@drawable/ic_reminder_vector">
+
+    <!-- Уменьшение колокольчика -->
+    <target android:name="scale">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400">
+                <propertyValuesHolder android:propertyName="scaleX" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="1"/>
+                    <keyframe android:fraction="0.15" android:value="0.78"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.85" android:value="0.78"/>
+                    <keyframe android:fraction="1"    android:value="1"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="scaleY" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="1"/>
+                    <keyframe android:fraction="0.15" android:value="0.78"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.85" android:value="0.78"/>
+                    <keyframe android:fraction="1"    android:value="1"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <!-- Качание корпуса -->
+    <target android:name="swing">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400">
+                <propertyValuesHolder android:propertyName="rotation" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.15" android:value="0"/>
+                    <keyframe android:fraction="0.30" android:value="14"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.45" android:value="-12"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.58" android:value="9"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.70" android:value="-6"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.80" android:value="3"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.90" android:value="0"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <!-- Язычок: противофаза + запаздывание -->
+    <target android:name="clapper">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400">
+                <propertyValuesHolder android:propertyName="rotation" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.15" android:value="0"/>
+                    <keyframe android:fraction="0.34" android:value="-18"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.49" android:value="15"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.62" android:value="-11"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.74" android:value="8"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.84" android:value="-4"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="0.93" android:value="0"
+                        android:interpolator="@android:interpolator/fast_out_slow_in"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <!-- Волны справа (удары на 0.34 и 0.62) -->
+    <target android:name="wave_r1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400">
+                <propertyValuesHolder android:propertyName="strokeAlpha" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.30" android:value="0"/>
+                    <keyframe android:fraction="0.35" android:value="1"/>
+                    <keyframe android:fraction="0.50" android:value="0"/>
+                    <keyframe android:fraction="0.58" android:value="0"/>
+                    <keyframe android:fraction="0.63" android:value="1"/>
+                    <keyframe android:fraction="0.77" android:value="0"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathEnd" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.30" android:value="0"/>
+                    <keyframe android:fraction="0.38" android:value="1"/>
+                    <keyframe android:fraction="0.57" android:value="1"/>
+                    <keyframe android:fraction="0.58" android:value="0"/>
+                    <keyframe android:fraction="0.61" android:value="0"/>
+                    <keyframe android:fraction="0.69" android:value="1"/>
+                    <keyframe android:fraction="1"    android:value="1"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+    <target android:name="wave_r2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400" android:startOffset="40">
+                <propertyValuesHolder android:propertyName="strokeAlpha" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.30" android:value="0"/>
+                    <keyframe android:fraction="0.35" android:value="1"/>
+                    <keyframe android:fraction="0.50" android:value="0"/>
+                    <keyframe android:fraction="0.58" android:value="0"/>
+                    <keyframe android:fraction="0.63" android:value="1"/>
+                    <keyframe android:fraction="0.77" android:value="0"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathEnd" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.30" android:value="0"/>
+                    <keyframe android:fraction="0.38" android:value="1"/>
+                    <keyframe android:fraction="0.57" android:value="1"/>
+                    <keyframe android:fraction="0.58" android:value="0"/>
+                    <keyframe android:fraction="0.61" android:value="0"/>
+                    <keyframe android:fraction="0.69" android:value="1"/>
+                    <keyframe android:fraction="1"    android:value="1"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+
+    <!-- Волны слева (удары на 0.49 и 0.74) -->
+    <target android:name="wave_l1">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400">
+                <propertyValuesHolder android:propertyName="strokeAlpha" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.44" android:value="0"/>
+                    <keyframe android:fraction="0.49" android:value="1"/>
+                    <keyframe android:fraction="0.62" android:value="0"/>
+                    <keyframe android:fraction="0.69" android:value="0"/>
+                    <keyframe android:fraction="0.74" android:value="1"/>
+                    <keyframe android:fraction="0.88" android:value="0"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathEnd" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.44" android:value="0"/>
+                    <keyframe android:fraction="0.52" android:value="1"/>
+                    <keyframe android:fraction="0.68" android:value="1"/>
+                    <keyframe android:fraction="0.69" android:value="0"/>
+                    <keyframe android:fraction="0.70" android:value="0"/>
+                    <keyframe android:fraction="0.78" android:value="1"/>
+                    <keyframe android:fraction="1"    android:value="1"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+    <target android:name="wave_l2">
+        <aapt:attr name="android:animation">
+            <objectAnimator android:duration="1400" android:startOffset="40">
+                <propertyValuesHolder android:propertyName="strokeAlpha" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.44" android:value="0"/>
+                    <keyframe android:fraction="0.49" android:value="1"/>
+                    <keyframe android:fraction="0.62" android:value="0"/>
+                    <keyframe android:fraction="0.69" android:value="0"/>
+                    <keyframe android:fraction="0.74" android:value="1"/>
+                    <keyframe android:fraction="0.88" android:value="0"/>
+                    <keyframe android:fraction="1"    android:value="0"/>
+                </propertyValuesHolder>
+                <propertyValuesHolder android:propertyName="trimPathEnd" android:valueType="floatType">
+                    <keyframe android:fraction="0"    android:value="0"/>
+                    <keyframe android:fraction="0.44" android:value="0"/>
+                    <keyframe android:fraction="0.52" android:value="1"/>
+                    <keyframe android:fraction="0.68" android:value="1"/>
+                    <keyframe android:fraction="0.69" android:value="0"/>
+                    <keyframe android:fraction="0.70" android:value="0"/>
+                    <keyframe android:fraction="0.78" android:value="1"/>
+                    <keyframe android:fraction="1"    android:value="1"/>
+                </propertyValuesHolder>
+            </objectAnimator>
+        </aapt:attr>
+    </target>
+</animated-vector>
